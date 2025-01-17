@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-gray-100 min-h-screen">
+        <header class="bg-white shadow">
+            <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Restaurant Logo" class="h-10 w-10 mr-3">
+                    <h1 class="text-2xl font-bold text-gray-800">Savour Checkout</h1>
+                </div>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header><br><br>
+        <div>
+            <div>
+                <h2 class="text-4xl font-bold text-gray-800 text-center">Checkout</h2><br><br>
+                <div class="grid grid-cols-1 gap-6 text-center container mx-auto px-4 py-6">
+                    <table class="w-full text-2xl">
+                        <tr>
+                            <th class="text-left">Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td id="a1" class="text-left"></td>
+                            <td id="q1"></td>
+                            <td id="p1"></td>
+                        </tr>
+                        <tr>
+                            <td id="a2" class="text-left"></td>
+                            <td id="q2"></td>
+                            <td id="p2"></td>
+                        </tr>
+                        <tr>
+                            <td id="a3" class="text-left"></td>
+                            <td id="q3"></td>
+                            <td id="p3"></td>
+                        </tr>
+                        <tr>
+                            <td id="a4" class="text-left"></td>
+                            <td id="q4"></td>
+                            <td id="p4"></td>
+                        </tr>
+                        <tr>
+                            <td id="a5" class="text-left"></td>
+                            <td id="q5"></td>
+                            <td id="p5"></td>
+                        </tr>
+                        <tr>
+                            <td id="a6" class="text-left"></td>
+                            <td id="q6"></td>
+                            <td id="p6"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Total</td>
+                            <td id="total1" colspan="2"></td>
+                            <td id="total"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
