@@ -17,9 +17,12 @@ let a3 = document.getElementById("a3");
 let a4 = document.getElementById("a4");
 let a5 = document.getElementById("a5");
 let a6 = document.getElementById("a6");
+let t1 = document.getElementById("t1");
+let t2 = document.getElementById("t2");
+let t3 = document.getElementById("t3");
 let total = document.getElementById("total");
 let Diss = document.getElementById("Diss");
-let FinPri = document.getElementById("FinPrin")
+let FinPri = document.getElementById("FinPri");
 
 // Set Default Value
 const d1 = "Chiken Burger";
@@ -28,6 +31,9 @@ const d3 = "Cheese Burger";
 const d4 = "French Fries";
 const d5 = "Soft Drinks";
 const d6 = "Water Bottle";
+const tt1 = ("Totle")
+const tt2 = ("Disscount");
+const tt3 = ("Final Price")
 
 // Get Information From User
 let z1 = prompt("You Order Chiken burger");
@@ -36,6 +42,7 @@ let z3 = prompt("You Order of Cheese burger");
 let z4 = prompt("You Order French fries");
 let z5 = prompt("You Order Soft drinks");
 let z6 = prompt("You Order Water bottle");
+let credit = prompt("Will You Pay Through Credit or Debit Card",'Type yes to get 8% Disscount')
 const yes = "yes";
 
 // Declare variables outside the if blocks
@@ -81,7 +88,23 @@ if (z6 === yes) {
 
 // Calculate Total Amount
 let totalAmount = (c1 * 200) + (c2 * 250) + (c3 * 300) + (c4 * 150) + (c5 * 50) + (c6 * 20);
-let disscount = ((totalAmount * 5) / 100)
+let disscount = ((totalAmount * 8) / 100)
+let final = (totalAmount - disscount)
+
 // Display Total Amount
-total.innerHTML = totalAmount;
-Diss.innerHTML = disscount
+if (credit === yes) {
+  t1.innerHTML = tt1
+  t2.innerHTML = tt2
+  t3.innerHTML = tt3
+  total.innerHTML = totalAmount;
+  Diss.innerHTML = disscount;
+  FinPri.innerHTML = final;
+
+}
+
+else {
+  t1.innerHTML = tt1
+  total.innerHTML = totalAmount
+}
+
+//End Of The Jave Script
