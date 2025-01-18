@@ -16,8 +16,10 @@ let a2 = document.getElementById("a2");
 let a3 = document.getElementById("a3");
 let a4 = document.getElementById("a4");
 let a5 = document.getElementById("a5");
-let a6 = document.getElementById("a5");
+let a6 = document.getElementById("a6");
 let total = document.getElementById("total");
+let Diss = document.getElementById("Diss");
+let FinPri = document.getElementById("FinPrin")
 
 // Set Default Value
 const d1 = "Chiken Burger";
@@ -36,39 +38,42 @@ let z5 = prompt("You Order Soft drinks");
 let z6 = prompt("You Order Water bottle");
 const yes = "yes";
 
+// Declare variables outside the if blocks
+let c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
+
 // Printing Bill
 if (z1 === yes) {
-  let c1 = parseInt(prompt("How many Chiken burger you want"));
+  c1 = parseInt(prompt("How many Chiken burger you want"));
   a1.innerHTML = d1;
   q1.innerHTML = c1;
   p1.innerHTML = c1 * 200;
 }
 if (z2 === yes) {
-  let c2 = parseInt(prompt("How many Beef burger you want"));
+  c2 = parseInt(prompt("How many Beef burger you want"));
   a2.innerHTML = d2;
   q2.innerHTML = c2;
   p2.innerHTML = c2 * 250;
 }
 if (z3 === yes) {
-  let c3 = parseInt(prompt("How many Cheese burger you want"));
+  c3 = parseInt(prompt("How many Cheese burger you want"));
   a3.innerHTML = d3;
   q3.innerHTML = c3;
   p3.innerHTML = c3 * 300;
 }
 if (z4 === yes) {
-  let c4 = parseInt(prompt("How many French fries you want"));
+  c4 = parseInt(prompt("How many French fries you want"));
   a4.innerHTML = d4;
   q4.innerHTML = c4;
   p4.innerHTML = c4 * 150;
 }
 if (z5 === yes) {
-  let c5 = parseInt(prompt("How many Soft drinks you want"));
+  c5 = parseInt(prompt("How many Soft drinks you want"));
   a5.innerHTML = d5;
   q5.innerHTML = c5;
   p5.innerHTML = c5 * 50;
 }
 if (z6 === yes) {
-  let c6 = parseInt(prompt("How many Water bottle you want"));
+  c6 = parseInt(prompt("How many Water bottle you want"));
   a6.innerHTML = d6;
   q6.innerHTML = c6;
   p6.innerHTML = c6 * 20;
@@ -76,8 +81,7 @@ if (z6 === yes) {
 
 // Calculate Total Amount
 let totalAmount = (c1 * 200) + (c2 * 250) + (c3 * 300) + (c4 * 150) + (c5 * 50) + (c6 * 20);
-
+let disscount = ((totalAmount * 5) / 100)
 // Display Total Amount
 total.innerHTML = totalAmount;
-// Assuming total1 is also defined as an element in your HTML
-total1.innerHTML = (c1 + c2 + c3 + c4 + c5 + c6);
+Diss.innerHTML = disscount
