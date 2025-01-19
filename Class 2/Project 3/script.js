@@ -82,11 +82,12 @@ if (z3 === yes) {
   q3.innerHTML = c3;
   //According To Quantity Price
   if(c3 > 5){
-    p3.innerHTML = c3 * 400
+    price3 = c3 * 400
   }
   else{
-    p3.innerHTML = c3 * 500
+    price3 = c3 * 500
   }
+  p3.innerHTML = price3
 }
 if (z4 === yes) {
   c4 = parseInt(prompt("How many French fries you want"));
@@ -94,23 +95,25 @@ if (z4 === yes) {
   q4.innerHTML = c4;
   //According To Quantity Price
   if(c4 > 5){
-    p4.innerHTML = c3 * 50
+    price4.innerHTML = c4 * 50
   }
   else{
-    p4.innerHTML = c3 * 100
+    price4.innerHTML = c4 * 100
   }
+  p4.innerHTML = price4
 }
 if (z5 === yes) {
   c5 = parseInt(prompt("How many Soft drinks you want"));
   a5.innerHTML = d5;
   q5.innerHTML = c5;
   //According To Quantity Price
-  if(c3 > 5){
-    p5.innerHTML = c3 * 180
+  if(c5 > 5){
+    price5.innerHTML = c5 * 180
   }
   else{
-    p5.innerHTML = c3 * 220
+    price5.innerHTML = c5 * 220
   }
+  p5.innerHTML = price5
 }
 if (z6 === yes) {
   c6 = parseInt(prompt("How many Water bottle you want"));
@@ -118,33 +121,33 @@ if (z6 === yes) {
   q6.innerHTML = c6;
   //According To Quantity Price
   if(c6 > 5){
-    p6.innerHTML = c3 * 80
+    price6.innerHTML = c6 * 80
   }
   else{
-    p6.innerHTML = c3 * 120
+    price6.innerHTML = c6 * 120
   }
+  p6.innerHTML = price6
 }
 
 // Calculate Total Amount
-let totalAmount = (c1 * 200) + (c2 * 250) + (c3 * 300) + (c4 * 150) + (c5 * 50) + (c6 * 20);
+let totalAmount = price1 + price2 + price3 + price4 + price5 + price6;
 let disscount = ((totalAmount * 8) / 100)
 let final = (totalAmount - disscount)
 
-// Display Total Amount
-t1.innerHTML = price1+price2
-// if (credit === yes) {
-//   t1.innerHTML = tt1
-//   t2.innerHTML = tt2
-//   t3.innerHTML = tt3
-//   total.innerHTML = totalAmount;
-//   Diss.innerHTML = disscount;
-//   FinPri.innerHTML = final;
+//Display Total Amount
+if (credit === yes) {
+  t1.innerHTML = tt1
+  t2.innerHTML = tt2
+  t3.innerHTML = tt3
+  total.innerHTML = totalAmount;
+  Diss.innerHTML = disscount;
+  FinPri.innerHTML = final;
 
-// }
+}
 
-// else {
-//   t1.innerHTML = tt1
-//   total.innerHTML = totalAmount
-// }
+else {
+  t1.innerHTML = tt1
+  total.innerHTML = totalAmount
+}
 
 //End Of The Jave Script
