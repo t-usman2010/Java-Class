@@ -21,26 +21,26 @@ if (getting === 1 ){
     h1.innerHTML = ("Hlo I am Your agent what is yours Problem");
     let problem = prompt("Type Here")
     h2.innerHTML = ("We are working in your Problem")
-    let rate = ("Type Our rating")
+    let rate = prompt(("Type Our rating"))
 }
 else if (getting === 2){
     alert("We are Getting Information Please Wait");
     h1.innerHTML = ("We tranfer Rs 0.005 to Your account");
-    let rate = ("Type Our rating")
+    let rate = prompt(("Type Our rating"))
 }
 else if(getting === 3){
     alert("We are PAkage detail Please Wait");
     h1.innerHTML = ("What Type Of problem You Want");
     let problem = prompt("Type Here")
     h2.innerHTML = ("We are working in your Package")
-    let rate = ("Type Our rating")
+    let rate = prompt(("Type Our rating"))
 }
 else if(getting === 4){
     alert("We are Card Detail Please Wait");
     h1.innerHTML = ("What Type Of card You Want");
     let problem = prompt("Type Here")
     h2.innerHTML = ("We are working in your Request")
-    let rate = ("Type Our rating")
+    let rate = prompt(("Type Our rating"))
 }
 else{
     h1.innerHTML = ("Invail Responce")
