@@ -9,6 +9,6 @@ for(var i= start_num; i <=end_num; i++){
         document.write("Even Number -->"+ start_num + "*" + i + "==" + resutl+"is higher than"+ ((i-1)*start_num) + "</br>");
     }
     else{
-        document.write("Odd Number -->" + start_num + "*"+ i + "==" + resutl + "is higher than"+ i/start_num+ "</br>");
+        document.write("Odd Number -->" + start_num + "*"+ i + "==" + resutl + "is higher than"+ ((i-1)*start_num) + "</br>");
     }
 }

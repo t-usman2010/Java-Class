@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Friendly <Table></Table></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100">
+    <header class="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 p-6 text-center">
+        <h1 class="text-2xl sm:text-4xl font-bold text-white drop-shadow-lg">Welcome to FunLand!</h1>
+        <p class="text-lg sm:text-xl text-yellow-200 mt-2">Where Learning is Fun!</p>
+        <nav class="mt-4">
+            <ul class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <li><a href="#" class="text-white hover:text-yellow-300">Home</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300">Games</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300">Stories</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <script src="script.js"></script> -->
+     <script>
+        // Start
+    let defaultno = 0;
+    let table_number = parseInt(prompt("Enter the number of table you want to print"));
+
+    // Create a container for the table
+    let tableContainer = document.createElement('div');
+    tableContainer.className = 'bg-white p-6 rounded-lg shadow-lg mt-6 mx-auto max-w-md';
+
+    // Create a title for the table
+    let tableTitle = document.createElement('h2');
+    tableTitle.className = 'text-2xl font-bold text-center text-purple-600 mb-4';
+    tableTitle.textContent = `Multiplication Table of ${table_number}`;
+    tableContainer.appendChild(tableTitle);
+
+    // Table loop
+    for (let i = 1; i <= 10; i++) {
+        let result = table_number * i;
+        let tableRow = document.createElement('p');
+        tableRow.className = 'text-lg text-blue-800';
+        tableRow.innerHTML = `${table_number} x ${i} = <span class="text-yellow-500">${result}</span>`;
+        tableContainer.appendChild(tableRow);
+    }
+
+    // Append the table container to the body
+    document.body.appendChild(tableContainer);
+     </script>
+</body>
+</html>
