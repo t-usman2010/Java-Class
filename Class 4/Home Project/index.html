@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Friendly <Table></Table></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100">
+    <header class="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 p-6 text-center">
+        <h1 class="text-2xl sm:text-4xl font-bold text-white drop-shadow-lg">Welcome to FunLand!</h1>
+        <p class="text-lg sm:text-xl text-yellow-200 mt-2">Where Learning is Fun!</p>
+        <nav class="mt-4">
+            <ul class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <li><a href="#" class="text-white hover:text-yellow-300">Home</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300">Games</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300">Stories</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h2 class="text-2xl sm:text-4xl font-bold text-center mt-4">Lets Write the Tables</h2>
+        <div class="text-center mt-4">
+            <form>
+                <label class="text-lg sm:text-xl font-semibold bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">Enter The Table of Number</label><br>
+                <input type="text" id="t_no" class="w-1/2 sm:w-1/4 p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" placeholder="Enter a Number" size="100"><br><br>
+                <label class="text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-500 via-purple-700 to-red-500 text-transparent bg-clip-text">Enter The Starting Number</label><br>
+                <input type="text" id="s_no" class="w-1/2 sm:w-1/4 p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" placeholder="Enter a Start Range"><br><br>
+                <label class="text-lg sm:text-xl font-semibold bg-gradient-to-r from-yellow-500 to-green-500 text-transparent bg-clip-text">Enter The Ending Number</label><br>
+                <input type="text" id="l_no" class="w-1/2 sm:w-1/4 p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" placeholder="Enter a Ending Range"><br><br><br>
+                <button type="button" onclick="genratetableup()" class="bg-blue-400 text-white p-2 rounded-lg ml-2">Generate Table From Upside</button>
+                <button type="button" onclick="genratetabledown()" class="bg-blue-400 text-white p-2 rounded-lg ml-2">Generate Table Form Downside</button>
+            </form>
+        </div>
+        <h1 id="output"></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
