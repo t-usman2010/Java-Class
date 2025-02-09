@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">My Website</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="text-center mt-10">
+        <h1 id="output"></h1>
+        <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-500 via-pink-500 to-purple-700 bg-clip-text text-transparent">Here Is FizzBizz Program</h1>
+        <button onclick="myFunction()" class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white font-bold py-2 px-4 rounded-full hover:from-green-500 hover:via-blue-600 hover:to-purple-700 transition duration-300 ease-in-out">Click Me</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
