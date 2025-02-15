@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.674);
+        }
+    </style>
+</head>
+<body >
+    <header class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-lg font-bold">My School Website</div>
+            <nav class="hidden md:flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-300">Home</a>
+                <a href="#" class="text-white hover:text-gray-300">About</a>
+                <a href="#" class="text-white hover:text-gray-300">Services</a>
+                <a href="#" class="text-white hover:text-gray-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container mx-auto p-4 text-center">
+        <h1 class="text-2xl font-bold">Welcome to My School Website</h1>
+        <p class="text-gray-500">Please enter your information for the addmssion in final Exams </p><br><br>
+    <div>
+        <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md space-y-4">
+            <div>
+            <label class="block text-gray-700 font-bold mb-2">Enter Your Name</label>
+            <input type="text" id="name" title="Name" placeholder="Enter your name" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div>
+            <label class="block text-gray-700 font-bold mb-2">Enter Your Father Name</label>
+            <input type="text" id="father_name" title="father_name" placeholder="Enter your father name" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div>
+            <label class="block text-gray-700 font-bold mb-2">Enter Your Roll Number</label>
+            <input type="number" id="roll_number" title="roll_number" placeholder="Enter your roll number" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div>
+            <label class="block text-gray-700 font-bold mb-2">Enter Your Class</label>
+            <input type="number" id="class" title="class" placeholder="Enter your class" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div>
+            <label class="block text-gray-700 font-bold mb-2">Admission Number</label>
+            <input type="number" id="admission_number" title="admission_number" placeholder="Enter your admission number" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div>
+            <label class="block text-gray-700 font-bold mb-2">Enter Your Address</label>
+            <input type="text" id="address" title="address" placeholder="Enter your address" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <button type="button" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" onclick="getting_information()">Submit</button>
+        </form>
+        <button type="submit" onclick="display()" class="w-full bg-green-500 text-white p-2 rounded-md hover:bg-green-600 mt-4">Enter the button For the List Of Students</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
