@@ -6,7 +6,6 @@ let roll = [];
 let class_ = [];
 let addmission = [];
 let address_ = [];
-Class_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function getting_information(){
     let name = document.getElementById("name").value;
@@ -27,38 +26,6 @@ function getting_information(){
 }
 function display(){
     for (let i = 0; i < student.length; i++){
-        for (let j = class_; j == Class_number.length; j++){
-            if(class_[j] == Class_number[0]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 1"+'<br>');
-        }
-        else if(class_[j] == Class_number[1]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 2"+'<br>');
-        }
-        else if(class_[j] == Class_number[2]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 3"+'<br>');
-        }
-        else if(class_[j] == Class_number[3]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 4"+'<br>');
-        }
-        else if(class_[j] == Class_number[4]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 5"+'<br>');
-        }
-        else if(class_[j] == Class_number[5]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 6"+'<br>');
-        }
-        else if(class_[j] == Class_number[6]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 7"+'<br>');
-        }
-        else if(class_[j] == Class_number[7]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 8"+'<br>');
-        }
-        else if(class_[j] == Class_number[8]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 9"+'<br>');
-        }
-        else if(class_[j] == Class_number[9]){
-        document.write('Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + "<---------Class 10"+'<br>');
-        }
-    }
-
+        document.write(""+'Name: ' + student[i] + ' Father name: ' + father[i] + ' Roll No: ' + roll[i] + ' Class: ' + class_[i] + ' Admission Number: ' + addmission[i] + ' Address: ' + address_[i] + '<br>');
     }
 }
