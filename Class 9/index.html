@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <header class="mb-6">
+            <h1 class="text-4xl font-bold text-center text-indigo-600">Age Calculator</h1>
+        </header>
+        <form class="space-y-4">
+            <div>
+                <label for="age" class="block text-sm font-medium text-gray-700">Enter Your Age</label>
+                <input type="number" name="Age" id="age" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" title="Enter Your Age">
+            </div>
+            <div>
+                <label for="current_year" class="block text-sm font-medium text-gray-700">Enter Current Year</label>
+                <input type="number" name="current year" id="current_year" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" title="Enter Current Year">
+            </div>
+            <div class="text-center">
+                <button type="button" onclick="calculate()" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Calculate</button>
+            </div>
+            <p id="result" class="text-center text-lg font-semibold text-gray-700"></p>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
