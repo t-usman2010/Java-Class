@@ -5,7 +5,7 @@ function showTime() {
 
 // Date
 function date(){
-    let iftar_time = ["6:12","6:13","6:13","6:14","6:15","6:16","6:17",]
+    let iftar_time = ["6:17","6:17","6:18","6:19","6:20","6:20","6:21",]
     let date_module = new Date();
     let date = date_module.getDay();
     document.getElementById('date').innerHTML = ("Todays Iftar Time is " + iftar_time[date]);
