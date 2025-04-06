@@ -1,5 +1,5 @@
 //Test
-var total = prompt(parseInt("Enter the total number of items: "));
+var total = parseInt(prompt("Enter the total number of items:"), 10) || 0; // Ensure a valid number or default to 0
 var cartData = 0;
 var buyData = 0;
 
@@ -21,7 +21,7 @@ cartButton.addEventListener("click", () => {
         cartValue.innerHTML = "Items in cart: " + cartData;
         totalItems.innerHTML = "Total items: " + total;
     } else {
-        warning.innerHTML("No more items to add to the cart.");
+        warning.innerHTML = "No more items to add to the cart.";
     }
 });
 
@@ -32,6 +32,6 @@ buyButton.addEventListener("click", () => {
         buyValue.innerHTML = "Items bought: " + buyData;
         cartValue.innerHTML = "Items in cart: " + cartData;
     } else {
-        warning.innerText("No items in the cart to purchase.");
+        warning.innerText = "No items in the cart to purchase.";
     }
 });
