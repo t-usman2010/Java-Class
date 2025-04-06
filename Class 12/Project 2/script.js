@@ -1,5 +1,5 @@
 //Test
-var total = 5;
+var total = prompt(parseInt("Enter the total number of items: "));
 var cartData = 0;
 var buyData = 0;
 
