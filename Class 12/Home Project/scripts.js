@@ -1,17 +1,23 @@
 //Start
-function submit() {
-    let code = document.getElementById("input1").value;
-    let body = document.getElementById("body");
-    if(code == 2010){	
-        alert("Correct!")
-        body.addEventListener("copy", (event) => { 
-            event.preventDefault();
-            navigator.clipboard.writeText("Custom text copied to clipboard!").then(() => {
-            alert("Custom text has been copied to clipboard!");
-            });
-        });
+let body = document.getElementById("body");
+let copyIsAllowed = false;
+
+body.addEventListener("copy", function(event) {
+    if (copyIsAllowed == false) {
+        event.preventDefault();
+        navigator.clipboard.writeText("First enter the password to copy!");
     }
-    else{
-        alert("Incorrect Password")
+});
+
+function submit() {
+    let password = document.getElementById("input1").value;
+    
+    if (password == 2010) {
+        alert("Correct Password! You can now copy.");
+        copyIsAllowed = true;
+    } else {
+        alert("Incorrect Password!");
+        copyIsAllowed = false;
     }
 }
+//End
