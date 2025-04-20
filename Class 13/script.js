@@ -13,7 +13,7 @@ function start() {
     div.appendChild(button);
     button.type = "button";
     button.innerHTML = "Submit";
-    button.onclick = function () {
+    button.onclick = function calling_sevices() {
         let inputValue = document.getElementById("inputField").value;
         let div2 = document.getElementById("div2");
         if (inputValue == 1) {
