@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body" class="bg-blue-50 text-gray-800 font-sans">
+    <nav class="bg-gradient-to-r from-blue-600 to-purple-600 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-bold text-xl">Beautiful Page</div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-blue-200 transition">Home</a>
+                <a href="#" class="text-white hover:text-blue-200 transition">About</a>
+                <a href="#" class="text-white hover:text-blue-200 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex flex-col items-center justify-center min-h-screen py-12">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Welcome to Our Beautiful Page</h1>
+            <p class="mt-4 text-lg text-gray-600">Explore the beauty of web design and development.</p>
+        </div>
+        <!-- Featured Content Section -->
+        <div class="max-w-4xl w-full mb-12 px-4">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-green-400 to-blue-500 p-4">
+                    <h2 class="text-2xl font-bold text-white">Today's Featured Content</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Amazing Facts</h3>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>The Great Barrier Reef is the world's largest coral reef system.</li>
+                                <li>A day on Venus is longer than a year on Venus.</li>
+                                <li>The human brain can process images in just 13 milliseconds.</li>
+                                <li>Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Inspiration Corner</h3>
+                            <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-600">
+                                "The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt
+                            </blockquote>
+                            <p class="mt-4 text-gray-700">Take a moment to reflect on your goals and aspirations. What small step can you take today?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional Information Cards -->
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl w-full px-4 mb-12">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-pink-500 h-2"></div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Our Mission</h3>
+                    <p class="text-gray-600">To create beautiful, accessible, and functional web experiences that inspire and delight users around the world.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-yellow-500 h-2"></div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Our Services</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Web Design</li>
+                        <li>• User Experience</li>
+                        <li>• Visual Branding</li>
+                        <li>• Content Creation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-green-500 h-2"></div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Connect With Us</h3>
+                    <p class="text-gray-600 mb-4">Join our community of creators and innovators.</p>
+                    <div class="flex space-x-3">
+                        <a href="https://t-usman2010.github.io/Portfolio" class="bg-blue-400 text-white p-2 rounded-full hover:bg-blue-500 transition">P-F</a>
+                        <a href="https://www.instagram.com/t.usman2010/" class="bg-pink-600 text-white p-2 rounded-full hover:bg-pink-700 transition">I-G</a>
+                        <a href="https://github.com/t-usman2010" class="bg-gray-600 text-white p-2 rounded-full hover:bg-gray-700 transition">GH</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center bg-white p-8 rounded-lg shadow-md mb-10 max-w-md w-full">
+            <label for="input1" class="text-sm font-medium mb-2">Enter Code Here:</label>
+            <input type="number" id="input1" placeholder="Type Here" class="border border-gray-300 rounded-md px-4 py-2 mb-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button onclick="submit()" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">Submit</button>
+            <div id="message" class="mt-4 text-center hidden"></div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-xl font-bold mb-2">Beautiful Page</h4>
+                    <p class="text-gray-400">Creating beauty in the digital world</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p>© 2025 Beautiful Page. All rights reserved.</p>
+                    <p class="text-gray-400 text-sm mt-1">Made with ❤️ for the web</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
